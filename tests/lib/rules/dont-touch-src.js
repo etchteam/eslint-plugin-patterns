@@ -1,6 +1,6 @@
 /**
  * @fileoverview Don&#39;t import things from the src folder
- * @author Gav
+ * @author Etch
  */
 "use strict";
 

@@ -1,13 +1,13 @@
 {
-  "name": "eslint-plugin-patterns",
+  "name": "@etchteam/eslint-plugin-patterns",
   "version": "0.0.0",
-  "description": "eslint rules for manypets patterns",
+  "description": "eslint rules for Patterns",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "Gav",
+  "author": "Etch",
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "scripts": {

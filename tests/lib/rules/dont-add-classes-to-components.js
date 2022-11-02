@@ -1,6 +1,6 @@
 /**
  * @fileoverview Don&#39;t change a component&#39;s appearance or layout.
- * @author ManyPets
+ * @author Etch
  */
 "use strict";
 
