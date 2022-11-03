@@ -23,6 +23,14 @@ ruleTester.run("dont-add-classes-to-components", rule, {
     {
       filename: 'test.vue',
       code: '<template><MCard /></template>'
+    },
+    {
+      filename: 'test.vue',
+      code: '<template><MCard type="primary" /></template>'
+    },
+    {
+      filename: 'test.vue',
+      code: '<template><div class="custom-class" /></template>'
     }
     // give me some code that won't trigger a warning
   ],
@@ -31,6 +39,11 @@ ruleTester.run("dont-add-classes-to-components", rule, {
     {
       filename: 'test.vue',
       code: "<template><MCard class=\"custom-class\" /></template>",
+      errors: [{ messageId: 'dontAddClassesToComponents' }],
+    },
+    {
+      filename: 'test.vue',
+      code: "<template><m-card class=\"custom-class\" /></template>",
       errors: [{ messageId: 'dontAddClassesToComponents' }],
     },
   ],
