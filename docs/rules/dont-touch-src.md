@@ -1,16 +1,16 @@
 # Don&#39;t import things from the src folder (dont-touch-src)
 
-Please describe the origin of the rule here.
+Patterns provides a public export interface that has been flattened to mask the internal organisation structure.
+
+Components may be moved to different folders, but as this is not part of the public export, imports from `src` are subject to break without warning.
 
 ## Rule Details
-
-This rule aims to...
 
 Examples of **incorrect** code for this rule:
 
 ```js
 
-// fill me in
+import MCard from '@boughtbymany/patterns/src/components/layout/Card/MCard'
 
 ```
 
@@ -18,18 +18,6 @@ Examples of **correct** code for this rule:
 
 ```js
 
-// fill me in
+import { MCard } from '@boughtbymany/patterns'   
 
 ```
-
-### Options
-
-If there are any options, describe them here. Otherwise, delete this section.
-
-## When Not To Use It
-
-Give a short description of when it would be appropriate to turn off this rule.
-
-## Further Reading
-
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.

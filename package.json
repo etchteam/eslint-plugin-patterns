@@ -1,6 +1,6 @@
 {
   "name": "@etchteam/eslint-plugin-patterns",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "eslint rules for Patterns",
   "keywords": [
     "eslint",

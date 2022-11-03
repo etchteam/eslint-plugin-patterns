@@ -1,6 +1,6 @@
 # eslint-plugin-patterns
 
-eslint rules for manypets patterns
+Eslint rules specifically for Patterns to help encourage best practice usage.
 
 ## Installation
 
@@ -10,37 +10,39 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-patterns`:
+Next, install `@etchteam/eslint-plugin-patterns`:
 
 ```sh
-npm install eslint-plugin-patterns --save-dev
+npm install @etchteam/eslint-plugin-patterns --save-dev
 ```
 
 ## Usage
 
-Add `patterns` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `@etchteam/patterns` to the plugins section of your `.eslintrc` configuration file:
 
 ```json
 {
     "plugins": [
-        "patterns"
+        "'@etchteam/patterns'"
     ]
 }
 ```
 
-
-Then configure the rules you want to use under the rules section.
+Then configure the rules you want to use under the rules section. 
+Recommended config is below.
 
 ```json
 {
     "rules": {
-        "patterns/rule-name": 2
+        "@etchteam/patterns/dont-touch-src": "warn",
+        "@etchteam/patterns/dont-add-classes-to-components": "warn"
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
+* @etchteam/patterns/dont-touch-src
+* @etchteam/patterns/dont-add-classes-to-components
 
 
